@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprende Codex paso a paso</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="badge">Guía práctica</p>
+      <h1>Cómo usar Codex paso a paso</h1>
+      <p class="subtitle">
+        Una página sencilla para empezar desde cero: configura tu entorno, pide tareas bien definidas y valida
+        resultados con confianza.
+      </p>
+      <a class="cta" href="#pasos">Empezar ahora</a>
+    </header>
+
+    <main>
+      <section id="pasos" class="card">
+        <h2>Ruta de aprendizaje</h2>
+        <p>Marca cada paso cuando lo completes para llevar tu progreso.</p>
+
+        <ol class="steps">
+          <li>
+            <label>
+              <input type="checkbox" class="step-check" />
+              <span>
+                <strong>1) Define el objetivo.</strong>
+                Escribe en una frase lo que quieres construir (por ejemplo: “crear una landing page para mi negocio”).
+              </span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="step-check" />
+              <span>
+                <strong>2) Da contexto útil.</strong>
+                Comparte lenguaje, stack, archivos importantes y restricciones para que Codex te dé resultados precisos.
+              </span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="step-check" />
+              <span>
+                <strong>3) Pide una primera versión.</strong>
+                Solicita una implementación mínima y funcional antes de pedir mejoras.
+              </span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="step-check" />
+              <span>
+                <strong>4) Revisa cambios y pruebas.</strong>
+                Verifica archivos modificados, ejecuta tests y pide ajustes si algo no cumple.
+              </span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="step-check" />
+              <span>
+                <strong>5) Itera con instrucciones claras.</strong>
+                Ejemplo: “hazlo más corto”, “agrega validaciones”, “separa en componentes”.
+              </span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="step-check" />
+              <span>
+                <strong>6) Finaliza con checklist.</strong>
+                Confirma que funciona, está legible y listo para entregar.
+              </span>
+            </label>
+          </li>
+        </ol>
+
+        <div class="progress-wrap">
+          <p>Progreso: <span id="progress-text">0/6 pasos completados</span></p>
+          <div class="progress-bar" aria-hidden="true">
+            <div id="progress-fill"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card tips">
+        <h2>Plantilla de prompt recomendada</h2>
+        <pre><code>Quiero construir: [objetivo]
+Tecnología: [React / Node / Python / etc.]
+Archivos relevantes: [rutas]
+Restricciones: [tiempo, estilo, librerías]
+Necesito que entregues:
+1) Código
+2) Explicación breve
+3) Comandos para probar</code></pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>Consejo: empieza simple, valida rápido y mejora en iteraciones cortas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
